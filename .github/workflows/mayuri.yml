@@ -1,0 +1,25 @@
+name: Run Python Programs
+
+on:
+ push:
+  branches:
+   - main
+
+jobs:
+ run-all:
+  runs-on: ubuntu-latest
+
+  steps:
+  #checkout resporatry code
+  - name: Checkout code
+    uses: actions/checkout@v4
+
+  #set up python
+  - name: set up python 
+    uses: actions/setup-python@v5
+    with:
+        python-version: '3.10'
+
+  #Run first python sript
+  - name: Run mayuri.py
+    run: python mayuri.py
