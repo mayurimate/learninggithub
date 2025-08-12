@@ -1,10 +1,10 @@
-name:Basic Commands
+name: Basic Commands
 
 on:
   push:
     branches: 
-      -main
-      -newB
+      - main
+      - newB
 
 jobs:
   demo-commands1:
