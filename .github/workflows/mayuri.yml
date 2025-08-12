@@ -21,5 +21,5 @@ jobs:
         python-version: '3.10'
 
   #Run first python sript
-  - name: Run mayuri.py
-    run: python mayuri.py
+  - name: Run ab.py
+    run: python ab.py
